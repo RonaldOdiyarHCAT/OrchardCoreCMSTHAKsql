@@ -1,0 +1,15 @@
+2022-05-25 17:41:49.4562 Warn Attempt #0 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 0ms
+2022-05-25 17:41:49.4577 Warn Attempt #1 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 1ms
+2022-05-25 17:41:49.4631 Warn Attempt #2 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 0ms
+2022-05-25 17:41:49.4640 Warn Attempt #3 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 0ms
+2022-05-25 17:41:49.4659 Warn Attempt #4 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 10ms
+2022-05-25 17:41:49.4777 Warn Attempt #5 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 11ms
+2022-05-25 17:41:49.4920 Warn Attempt #6 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 17ms
+2022-05-25 17:41:49.5111 Warn Attempt #7 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 6ms
+2022-05-25 17:41:49.5186 Warn Attempt #8 to open /App_Data/logs/orchard-log-2022-05-25.log failed. Sleeping for 87ms
+2022-05-25 17:41:49.6122 Error FileTarget(Name=file): Failed write to file '/App_Data/logs/orchard-log-2022-05-25.log'. Exception: System.IO.IOException: Read-only file system : '/App_Data/logs'
+   at System.IO.FileSystem.CreateDirectory(String fullPath)
+   at System.IO.Directory.CreateDirectory(String path)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender.Write(Byte[] bytes, Int32 offset, Int32 count)
+   at NLog.Targets.FileTarget.WriteToFile(String fileName, ArraySegment`1 bytes, Boolean initializedNewFile)
